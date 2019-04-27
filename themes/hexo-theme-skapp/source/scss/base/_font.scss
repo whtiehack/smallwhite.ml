@@ -1,11 +1,11 @@
 $path: '../../fonts/';
 
 @font-face {font-family: "iconfont";
-  src: url($path + 'iconfont.eot?t=1503327386217'); /* IE9*/
-  src: url($path + 'iconfont.eot?t=1503327386217#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url($path + 'iconfont.woff?t=1503327386217') format('woff'), /* chrome, firefox */
-  url($path + 'iconfont.ttf?t=1503327386217') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url($path + 'iconfont.svg?t=1503327386217#iconfont') format('svg'); /* iOS 4.1- */
+  src: url($path + 'iconfont.eot'); /* IE9*/
+  src: url($path + 'iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($path + 'iconfont.woff') format('woff'), /* chrome, firefox */
+  url($path + 'iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url($path + 'iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {

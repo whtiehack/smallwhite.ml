@@ -4,12 +4,60 @@
 
 # Site
 title: Slog
-subtitle: smallwhite Blog
-description: smallwhite Blog
-keywords:
-author: smallwhite
-language: cn
+subtitle: smallwhite's Blog
+# banner显示的简短介绍
+subtitle_desc: 日常学习与兴趣交流
+description: smallwhite's Blog 日常学习与兴趣交流的个人博客
+# seo关键字
+keywords: slog, smallwhite's blog, 后端博客, 后端, 程序员, 后端开发, 全栈开发, node.js, javascript, golang, c/c++, pinus, pomelo, typescript
+# 个人介绍
+introduction: 不思量，自难忘！
+author:
+  name: smallwhite
+  link: https://github.com/whtiehack
+
+language: zh-cn
 timezone: Asia/Shanghai
+favicon_ico: /favicon.ico
+logo: /favicon.png
+avatar: /draw.png
+default_cover: /programming.png
+header_cover: /banner-bg.jpg
+# 404 页面的背景图
+error_page_bg: /dogs.jpg
+
+# 页面加载loading图标
+loader_img: /loader.gif
+
+# Baidu statistic
+baidu_statistic: ffbfeacabe5e673d7a972c8b3977806f
+
+# Busuanzi
+busuanzi: true
+
+menu:
+  home: /
+  archive: /archives
+  about: /about
+
+copyright:
+  name: smallwhite
+  link: /
+  year: 2019
+
+about:
+  address: https://github.com/whtiehack
+  email: smallwhite110@gmail.com
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -43,7 +91,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,7 +100,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -73,7 +121,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-skapp
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

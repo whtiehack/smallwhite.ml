@@ -1,0 +1,12 @@
+friend_links:
+  - name: Github
+    desc: smallwhite's Github
+    link: https://github.com/whtiehack
+
+build_tools:
+  - name: Hexo
+    desc: Blog Framework
+    link: https://hexo.io/
+  - name: Theme
+    desc: Blog theme
+    link: https://github.com/Mrminfive/hexo-theme-skapp

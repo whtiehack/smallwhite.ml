@@ -10,7 +10,9 @@ pages:
   stage: deploy
   script:
     - npm install
-    - npm run build
+    - npm install hexo-cli -g
+    - hexo g
+    - hexo deploy
 
   artifacts:
     paths:

@@ -1,0 +1,9 @@
+---
+title: 一个小函数 进程ID取进程全路径
+date: 2010-12-20 05:44:00
+tags: CSDN迁移
+---
+   BOOL GetProcessName(DWORD PID, PTSTR szProcessName, size_t cchSize) { BOOL bReturn=FALSE; HANDLE hProcess = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, PID); if (hProcess == NULL) { _tcscpy_s(szProcessName, cchSize, TEXT("???")); return bReturn; } static DWORD dwVer=0;//静态 调用一次即可 if (dwVer==0) { OSVERSIONINFO os={sizeof(OSVERSIONINFO)}; GetVersionEx(&os); dwVer=os.dwMajorVersion; } if (dwVer<6)//版本小于 Windows Vista { if (GetModuleFileNameEx(hProcess, (HMODULE)0, szProcessName, cchSize) == 0) { // GetModuleFileNameEx could fail when the address space // is not completely initialized. This occurs when the job // notification happens. // Hopefully, GetProcessImageFileNameW still works even though // the obtained path is more complication to decipher // /Device/HarddiskVolume1/Windows/System32/notepad.exe if (!GetProcessImageFileName(hProcess, szProcessName, cchSize)) { _tcscpy_s(szProcessName, cchSize, TEXT("???")); } else bReturn=TRUE; } else bReturn=TRUE; } else { // but it is easier to call this function instead that works fine // in all situations. /******2010/12/20 4:43 SM修改为支持XP系统 ******/ typedef BOOL (WINAPI *_QueryFullProcessImageName)( HANDLE hProcess, DWORD dwFlags, LPTSTR lpExeName, PDWORD lpdwSize ); _QueryFullProcessImageName _pQFPIN=NULL; _pQFPIN=(_QueryFullProcessImageName)GetProcAddress( GetModuleHandle(TEXT("Kernel32.dll")), #ifdef UNICODE "QueryFullProcessImageNameW" #else "QueryFullProcessImageNameA" #endif ); DWORD dwSize = (DWORD) cchSize; if (!_pQFPIN(hProcess, 0, szProcessName, &dwSize))//call QueryFullProcessImageName { //最低版本 vista _tcscpy_s(szProcessName, cchSize, TEXT("???")); } else bReturn=TRUE; /******2010/12/20 4:40 加入读取进程名字失败判断 ******/ } // Don't forget to close the process handle CloseHandle(hProcess); return bReturn; }  
+
+   
+ 

@@ -39,9 +39,11 @@
                 </span>
             {% endif %}
         </p>
-        <p itemprop="articleSection" class="min-article__desc">
-            {{ post.subtitle }}
-        </p>
+        {% if post.subtitle %}
+            <p itemprop="articleSection" class="min-article__desc">
+                {{ post.subtitle }}
+            </p>
+        {% endif %}
         <div class="min-article__tags">
             <i class="iconfont icon-tab"></i>
             <ul class="tags__list clearfix">

@@ -71,7 +71,7 @@ permalink_defaults:
 gitTalk:
   clientId: afe80ed401fed3bea37a
   clientSecret: e9d739d3b614ac49d15e8e64dc9006c2c14baa02
-  repo: https://github.com/whtiehack/smallwhite.ml
+  repo: smallwhite.ml
   owner: whtiehack
   admin:
     - whtiehack

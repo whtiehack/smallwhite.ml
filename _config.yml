@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Slog.tk
+title: smallwhite's Blog
 subtitle: smallwhite's Blog
 # banner显示的简短介绍
 subtitle_desc: 日常学习与兴趣交流
@@ -62,7 +62,7 @@ baidusitemap:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://slog.tk
+url: https://smallwhite.ml
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

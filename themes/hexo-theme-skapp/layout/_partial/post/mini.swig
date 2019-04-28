@@ -20,7 +20,8 @@
         <h3 itemprop="name" class="mini-article__title">
             <a itemprop="url" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
         </h3>
-        <p class="mini-article__author">by 
+        <span class="mark__item">{{date(post.date)}}</span>
+        <p class="mini-article__author">by
             {% if Array.isArray(post.author) %}
                 {% for user in post.author %}
                     <span class="author__item" itemprop="author" itemscope itemtype="http://schema.org/Person">

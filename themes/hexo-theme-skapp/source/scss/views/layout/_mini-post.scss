@@ -113,7 +113,6 @@ body {
     font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
 
     & > a {
         @include link($main-color);

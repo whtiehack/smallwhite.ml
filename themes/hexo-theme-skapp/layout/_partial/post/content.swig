@@ -71,14 +71,14 @@
         {% endif %}
 
         <div class="post__prevs">
-            <div class="post__prev post__prev--right">
+            <div class="post__prev ">
                 {% if page.prev %}
-                <a href="{{ url_for(page.prev.path) }}" title="{{ page.prev.title }}">{{ page.prev.title }}<i class="iconfont icon-next"></i></a>
+                <a href="{{ url_for(page.prev.path) }}" title="{{ page.prev.title }}"><i class="iconfont icon-prev"></i>{{ page.prev.title }}</a>
                 {% endif %}
             </div>
-            <div class="post__prev">
+            <div class="post__prev post__prev--right">
                 {% if page.next %}
-                <a href="{{ url_for(page.next.path) }}" title="{{ page.next.title }}"><i class="iconfont icon-prev"></i>{{ page.next.title }}</a>
+                <a href="{{ url_for(page.next.path) }}" title="{{ page.next.title }}">{{ page.next.title }}<i class="iconfont icon-next"></i></a>
                 {% endif %}
             </div>
         </div>

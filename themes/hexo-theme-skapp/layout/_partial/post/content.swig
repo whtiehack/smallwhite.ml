@@ -24,7 +24,7 @@
                     {% endif %}
                 </ul>
             </div>
-            
+
             <div class="mark__block">
                 <i class="mark__icon iconfont icon-time"></i>
                 <ul class="mark__list clearfix">
@@ -61,7 +61,7 @@
         <div class="post-announce">
             {{ __('copyright_statement.one') }}
             <a href="{{ page.editor.link }}">{{ page.editor.name }}</a> {{ __('copyright_statement.two') }}：{{ page.editor.name }}（<a href="{{ page.editor.link }}">{{ page.editor.link }}</a>）
-        </div> 
+        </div>
         {% else %}
         <div class="post-announce">
             {{ __('copyright_statement.three') }}
@@ -71,14 +71,14 @@
         {% endif %}
 
         <div class="post__prevs">
-            <div class="post__prev">
-                {% if page.next %}
-                <a href="{{ url_for(page.next.path) }}" title="{{ page.next.title }}"><i class="iconfont icon-prev"></i>{{ page.next.title }}</a>
-                {% endif %}
-            </div>
             <div class="post__prev post__prev--right">
                 {% if page.prev %}
                 <a href="{{ url_for(page.prev.path) }}" title="{{ page.prev.title }}">{{ page.prev.title }}<i class="iconfont icon-next"></i></a>
+                {% endif %}
+            </div>
+            <div class="post__prev">
+                {% if page.next %}
+                <a href="{{ url_for(page.next.path) }}" title="{{ page.next.title }}"><i class="iconfont icon-prev"></i>{{ page.next.title }}</a>
                 {% endif %}
             </div>
         </div>

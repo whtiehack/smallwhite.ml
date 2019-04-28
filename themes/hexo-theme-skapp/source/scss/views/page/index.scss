@@ -10,13 +10,13 @@ body {
         }
 
         .page__post {
-            width: 300px;
+            width: 600px;
         }
     }
 
     @media screen and (min-width: $mq-desktop--wide) {
         .page__post {
-            width: 290px;
+            width: 750px;
         }
     }
 }

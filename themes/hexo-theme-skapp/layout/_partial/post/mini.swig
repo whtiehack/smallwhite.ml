@@ -1,4 +1,5 @@
 <article itemscope itemtype="http://schema.org/Article" class="page__mini-article">
+    {% if post.cover %}
     <div class="mini-article__cover">
         {% if not post.cover %}
             <img itemprop="image" src="{{ get_setting('default_cover') }}" alt="{{ post.title }}"/>
@@ -16,6 +17,7 @@
         </div>
         <a itemprop="url" class="iconfont icon-enter" href="{{ url_for(post.path) }}"></a>
     </div>
+    {% endif %}
     <div class="mini-article__info">
         <h3 itemprop="name" class="mini-article__title">
             <a itemprop="url" href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>

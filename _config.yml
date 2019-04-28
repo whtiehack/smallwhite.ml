@@ -67,6 +67,15 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
+# Gitalk
+gitTalk:
+  clientId: afe80ed401fed3bea37a
+  clientSecret: e9d739d3b614ac49d15e8e64dc9006c2c14baa02
+  repo: https://github.com/whtiehack/smallwhite.ml
+  owner: whtiehack
+  admin:
+    - whtiehack
+
 # Directory
 source_dir: source
 public_dir: public

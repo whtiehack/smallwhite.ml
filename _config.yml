@@ -67,8 +67,13 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
+# https://github.com/viko16/hexo-permalink-pinyin
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
 # Gitalk
 gitTalk:
+  createIssueManually: true
   clientId: afe80ed401fed3bea37a
   clientSecret: e9d739d3b614ac49d15e8e64dc9006c2c14baa02
   repo: smallwhite.ml

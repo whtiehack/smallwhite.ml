@@ -1,6 +1,6 @@
 {% if page.comments && config.gitTalk %}
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     <script src="/js/md5.min.js"></script>
 
     <script>
@@ -13,7 +13,7 @@
             owner: '{{ config.gitTalk.owner }}',
             admin: [{% for item in config.gitTalk.admin %}'{{ item }}', {% endfor %}],
             labels: tags,
-            id: (new Date({{ page.date }})).getTime() > (new Date('2018-02-15')).getTime() ? md5(location.href) : location.href
+            id: location.pathname.length > 50 ? md5(location.href) : location.pathname
         });
 
         gitalk.render('comment-container');

@@ -5,7 +5,9 @@
 
     <script>
         var tags = [{% for tag in page.tags %}'{{ tag.name }}', {% endfor %}];
-
+        var arr = location.pathname.split('/')
+        var id = arr[arr.length-2]
+        id = id.length > 50 ? id.substr(0,50) : location.pathname
         var gitalk = new Gitalk({
             clientID: '{{ config.gitTalk.clientId }}',
             clientSecret: '{{ config.gitTalk.clientSecret }}',
@@ -13,7 +15,7 @@
             owner: '{{ config.gitTalk.owner }}',
             admin: [{% for item in config.gitTalk.admin %}'{{ item }}', {% endfor %}],
             labels: tags,
-            id: location.pathname.length > 50 ? md5(location.href) : location.pathname
+            id: id?id:md5(location.pathname)
         });
 
         gitalk.render('comment-container');

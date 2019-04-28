@@ -9,10 +9,8 @@ cache:
 pages:
   stage: deploy
   script:
-    - npm install
-    - npm install hexo-cli -g
-    - hexo g
-    - hexo deploy
+    - if [[ ! -d "node_modules" ]]; then   npm install; fi
+    - npm run build
 
   artifacts:
     paths:

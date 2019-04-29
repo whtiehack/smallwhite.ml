@@ -6,6 +6,7 @@ comments: true
 categories:
 # 首页每篇文章的子标题
 subtitle: {{ title }}
+permalink: 
 # 作者信息，多作者则设置为数组
 # 单作者
 author: 

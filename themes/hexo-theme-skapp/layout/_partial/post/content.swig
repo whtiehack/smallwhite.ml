@@ -29,6 +29,9 @@
                 <i class="mark__icon iconfont icon-time"></i>
                 <ul class="mark__list clearfix">
                     <li class="mark__item"><span>{{ date(page.date) }}</span></li>
+                    {% if page.update %}
+                        <li class="mark__item"><span>{{ date(page.update) }}</span></li>
+                    {% endif %}
                 </ul>
             </div>
 

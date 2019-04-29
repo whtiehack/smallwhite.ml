@@ -3,9 +3,12 @@ title: 构造干净的 Git 历史线索
 date: 2016-07-14 19:49:00
 tags: CSDN迁移
 permalink: construct-cliean-git-history
+update: 2019-04-29 16:54:00
 author:
-  nick: 严俊羿
-  link: 'https://yanjunyi.com/'
+  - nick: smallwhite
+    link: https://smallwhite.ml
+  - nick: 严俊羿
+    link: 'https://yanjunyi.com/'
 typora-root-url: ../
 ---
 
@@ -48,13 +51,13 @@ typora-root-url: ../
  留意到上一节的糟糕例子中，有几条 merge 信息是这样的格式：
 
 
-```
+```shell
 merge <branch> of <source_url> into <branch>
 ```
  这类 merge 是在开发者向 git 源 push 的时候发生冲突，然后运行git pull的时候产生的。git pull 确实很便利，但是却产生了副作用：一个特性分支变成了两个。
 
 
-```
+```shell
 git push # 冲突
 git pull # ！产生额外的分支
 ```
@@ -65,7 +68,7 @@ git pull # ！产生额外的分支
  解决这些多余的 merge 信息的解决方案就是—— rebase。
 
 
-```
+```shell
 git push # 冲突
 git pull --rebase
 git push
@@ -155,9 +158,59 @@ git push
  以上转自：[构造干净的 Git 历史线索](http://codecampo.com/topics/379)
 
 
+
+
 ## 多人协作规范
 
  多人合作时比自己管理分支立马复杂了一个数量级，因为每人都会有一套分支结构，如果大家都遵循上一节分支规范还好，否则更加麻烦。
+
+
+
+### 小团队集中式管理规范
+
+1. 除了上线过程任何时候保持本地`master`分支与仓库`master`分支同步（即每次开始开发前先同步`master`分支）：
+
+   ```shell
+   $ git checkout master     # 切换到master分支
+   $ git pull origin master  # 更新master分支
+   ```
+
+2. 任何新功能的开发或bug修复都从本地的`master`分支`checkout`出一个新的临时功能分支来跟踪：
+
+   ```shell
+   $ git checkout -b feature-style                       # 从更新的master分支创建并切换至feature-style分支
+   ...(code dev)                                         # 开发代码
+   $ git add path/to/modified/files                      # 标记修改的文件
+   $ git commit -m "Adjust page style for xxx function." # 提交修改
+   ```
+
+3. 在本地测试完成后将当前临时分支合并到本地`dev`分支，并推送到仓库的`dev`分支自动部署到环境测试进行测试：
+
+   ```shell
+   $ git checkout dev                 # 切换到dev分支
+   $ git pull origin dev              # 更新dev分支
+   $ git merge --no-ff feature-style  # 将开发好功能的feature-style分支合并到dev分支
+   $ git push origin dev              # 推送dev到仓库，将自动部署到test.youketu.com环境
+   ```
+
+   测试发现的任何问题要回到`feature-style`分支进行修改，然后再重复上述两步。
+
+4. 在测试环境确认自己开发的功能OK以后，将功能临时分支合并到本地`master`分支，并推送到仓库，准备上线：
+
+   ```shell
+   $ git checkout master              # 切换到master分支
+   $ git pull origin master           # 更新master分支（避免其他人上线的修改产生冲突）
+   $ git merge --no-ff feature-style  # 将测试完成的分支合并入本地的master分支
+   $ git push origin master           # 推送master到仓库，并通知线上服务器管理员进行pull上线
+   ```
+
+5. 线上服务器管理员登录服务器，更新代码完成上线。
+
+6. Bug修复的每一次提交都可以在注释信息里填写已关联在issues系统里的bug编号，如`git commit -m "Resolved #12. Fix admin style..."`，这样可以自动关闭系统中的Bug。
+
+7. `dev`分支只作为测试服务器自动部署用，任何情况下不再合并`dev`到`master`，这两个分支只通过各个开发者的临时功能分支间接产生交互，互不干扰。
+
+### 开源项目分布式管理规范
 
  如果不是一个小团队可以达到内部高度规范和统一，那么大多数时候开源项目更适合使用Pull request的方式合作，这样的方式也更符合GitHub设计的精髓。
 

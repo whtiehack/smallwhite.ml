@@ -1,6 +1,9 @@
 ---
 title: CriticalSection临界区封装类
 date: 2010-12-31 17:23:00
+author:
+  nick: smallwhite
+  link: 'https://github.com/whtiehack'
 tags: 
  - CSDN迁移
  - c++

@@ -8,5 +8,15 @@ layout: about
 
 
 
-![](0_1292516063Q403.gif)
+<h1><center> About </center></h1>
+
+
+
+<center><img src="0_1292516063Q403.gif"/></center>
+
+
+
+
+
+<center>可以在下面留言吐槽</center>
 

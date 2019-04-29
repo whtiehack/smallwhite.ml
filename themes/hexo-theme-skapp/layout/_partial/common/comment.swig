@@ -12,7 +12,7 @@
             owner: '{{ config.gitTalk.owner }}',
             admin: [{% for item in config.gitTalk.admin %}'{{ item }}', {% endfor %}],
             labels: tags,
-            id: new Date({{ page.date }}).toLocaleString()
+            id: new Date({{ page.date }}).toISOString()
         });
 
         gitalk.render('comment-container');

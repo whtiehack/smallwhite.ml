@@ -2,11 +2,15 @@
 title: bluebird还有替代原生 promise的必要吗
 date: 2018/01/10 14:52:55
 tags: CSDN迁移
+permalink: bluebird-instead-origin-promise
+author: 
+  nick: smallwhite
+  link: https://github.com/whtiehack
 ---
   #### []()测试代码
 
  
-```
+```javascript
 
 
 // global.Promise = require('bluebird').Promise;
@@ -42,7 +46,7 @@ co(function*(){
 #### []()v8.9.4
 
  
-```
+```shell
 
 //  8.9.4 原生的Promise
 ➜  bin node "/Users/mac/Documents/testnodejs/pathtest2.js"
@@ -80,7 +84,7 @@ all test end
 #### []()v6.12.3
 
  
-```
+```shell
 // 原生 Promise
 ➜  bin ./node /Users/mac/Documents/testnodejs/pathtest2.js
 node version: v6.12.3

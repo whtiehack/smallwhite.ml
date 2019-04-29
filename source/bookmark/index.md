@@ -14,3 +14,9 @@ layout: bookmark
 
 https://www.typora.io/
 
+>  typora 小技巧
+>
+> `typora-root-url: ../`
+
+
+

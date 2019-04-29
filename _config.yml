@@ -38,6 +38,7 @@ busuanzi: true
 menu:
   home: /
   archive: /archives
+  bookmark: /bookmark
   about: /about
 
 copyright:

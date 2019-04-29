@@ -4,6 +4,7 @@ menu:
   works: Works
   music: Music
   about: About
+  bookmark: Bookmark
   docs: Docs
   archive: Archive
   tags: Tags
@@ -30,6 +31,6 @@ copyright_statement:
   three: Thank you for reading, this article belongs to
   four: copyright, if reproduced, please indicate the source
 
-other: 
+other:
   bout: bout
   year: Year

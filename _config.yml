@@ -65,7 +65,7 @@ baidusitemap:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://smallwhite.ml
 root: /
-permalink: :year/:month/:day/:title/
+permalink: pub/:category/:title.html
 permalink_defaults:
 
 # https://github.com/viko16/hexo-permalink-pinyin

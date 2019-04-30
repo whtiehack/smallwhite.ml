@@ -9,7 +9,7 @@ layout: bookmark
 <h1>
     <center>小书签</center>
 </h1>
-
+*只是一个记录，类似收藏夹*
 
 
 ## markdown 编辑器

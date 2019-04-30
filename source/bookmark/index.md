@@ -24,11 +24,21 @@ https://www.typora.io/
 
 
 
-
-
 ## Rocket.Chat
+
+跨平台全面的聊天服务器。功能类似 Slack
 
 [RocketChat](<https://github.com/RocketChat/Rocket.Chat>)
 
-> ReadMe里有不少可以免费部署的 SaaS 的服务商
+> ReadMe里有不少可以免费部署的 SaaS 和 PaaS 的服务商
+
+
+
+## 一个一键安装App平台
+
+[Cloudron](https://cloudron.io/index.html) 
+
+Cloudron is a complete solution for running apps on your server and keeping them up-to-date and secure.
+
+
 

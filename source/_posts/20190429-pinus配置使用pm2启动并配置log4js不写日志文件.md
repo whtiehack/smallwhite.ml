@@ -15,6 +15,7 @@ permalink: pinus-use-pm2-start-and-setting-log4js-not-write-logfile
 ---
 
 
+
 ### 这里只是讲怎么使用 [pm2](https://github.com/Unitech/pm2) 来管理pinus进程与日志，可以做一个参考。
 
 

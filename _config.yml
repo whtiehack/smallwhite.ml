@@ -20,7 +20,7 @@ language: zh-cn
 timezone: Asia/Shanghai
 favicon_ico: /favicon.ico
 logo: /favicon.png
-avatar: /draw.png
+avatar: # /draw.png
 default_cover: /programming.png
 header_cover: /banner-bg.jpg
 # 404 页面的背景图

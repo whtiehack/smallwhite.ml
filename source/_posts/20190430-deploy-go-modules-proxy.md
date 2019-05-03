@@ -1,5 +1,5 @@
 ---
-title: 自建免费 go modules 代理
+title: 学习golang的第一步-自建免费 go modules 代理
 comments: true
 subtitle: 用 goproxy.io 自建 go modules 代理，部署到 heroku
 author:
@@ -15,12 +15,15 @@ permalink: deploy-go-modules-proxy
 ---
 
 
+### 引子
 
-### github 仓库 : <https://github.com/whtiehack/goproxy>
+最近想研究golang，但是被墙堵住了，科学上网又感觉太慢，而且不方便设置。
 
+突然间发现发现了go有个变量 `GOPROXY` 可以设置代理。
 
+然后各种baidu,gg 发现目前网上主要有这两个 `GOPROXY="https://athens.azurefd.net"` `GOPROXY="https://goproxy.io"` 代理。
 
----
+但是速度都太慢了，经常有包下载不下来。 所以想研究下看能不能自己搭一个代理方便自己用。 而 goproxy.io提供了一个docker，而且heroku也支持。所有有了这篇类似教程的文章。
 
 
 
@@ -94,6 +97,10 @@ windows:
 
 
 
+----
+
+
+### github 仓库 : <https://github.com/whtiehack/goproxy>
 
 
 ----

@@ -42,3 +42,15 @@ Cloudron is a complete solution for running apps on your server and keeping them
 
 
 
+## 可替代Nginx的Https/2的Web服务器
+
+[Caddy](https://caddyserver.com/)
+
+配置简单。插件方便。
+
+Caddy is the HTTP/2 web server with automatic HTTPS.
+
+自动开启 https。自动更新Let's Encrypt 证书。
+
+
+

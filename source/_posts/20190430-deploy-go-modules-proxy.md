@@ -102,7 +102,6 @@ windows:
 
 ### github 仓库 : <https://github.com/whtiehack/goproxy>
 
-
 ----
 
 
@@ -123,4 +122,10 @@ export GOPROXY="https://proxy.golang.org"
 
 
 别忘记开启golang的 modules 特性。
+
+
+
+goland 可以这样设置代理：
+
+![1557287491472](/images/1557287491472.png)
 

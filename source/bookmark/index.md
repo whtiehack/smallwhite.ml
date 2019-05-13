@@ -42,17 +42,17 @@ layout: bookmark
 
 
 
-## 小工具 
+## 科学上网
 
-| name                                                      | note                                                    |
-| --------------------------------------------------------- | ------------------------------------------------------- |
-| [科学上网](https://free-ss.site/)  <https://free-ss.ooo/> | 免费 ss vmess <https://github.com/free-ss/free-ss.site> |
-
-
+| name                                                     | note                                                    |
+| -------------------------------------------------------- | ------------------------------------------------------- |
+| [free-ss](https://free-ss.site/)  <https://free-ss.ooo/> | 免费 ss vmess <https://github.com/free-ss/free-ss.site> |
+|                                                          |                                                         |
 
 ## 接口
 
 | name                        | note                                         |
 | --------------------------- | -------------------------------------------- |
 | ip  <http://httpbin.org/ip> | {   "origin": "218.2.184.58, 218.2.184.58" } |
+| <https://mzr.me/>           | mzr is me  公共DNS  公共NTP  在线二维码API   |
 

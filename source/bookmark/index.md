@@ -23,6 +23,18 @@ layout: bookmark
 
 
 
+----
+
+#### mac 推荐
+
+<https://www.v2ex.com/t/563292#reply125>
+
+![img](images/mac.jpg)
+
+<https://github.com/hzlzh/Best-App>
+
+录屏软件 kap 相当好用，能导出成 GIF，MP4。免费，开源。<https://getkap.co/>
+
 
 
 ------
@@ -55,4 +67,31 @@ layout: bookmark
 | --------------------------- | -------------------------------------------- |
 | ip  <http://httpbin.org/ip> | {   "origin": "218.2.184.58, 218.2.184.58" } |
 | <https://mzr.me/>           | mzr is me  公共DNS  公共NTP  在线二维码API   |
+
+
+
+## 教程
+
+| name  | note                                                |
+| ----- | --------------------------------------------------- |
+| React | <http://www.ruanyifeng.com/blog/2015/03/react.html> |
+| React | <https://segmentfault.com/a/1190000012921279>       |
+|       |                                                     |
+
+
+
+
+
+### 后台管理框架
+
+| type                                                        | addr                                                    |
+| ----------------------------------------------------------- | ------------------------------------------------------- |
+| vue                                                         | <https://github.com/huangtao/gameld-admin>              |
+| vue                                                         | https://github.com/herozhou/vue-framework-wz            |
+| vue                                                         | <https://gitee.com/77135016/vueXieDeGuanLiHouTaiMoBan>  |
+| vue                                                         | <https://github.com/harsima/vue-backend>  推荐          |
+| react antd                                                  | <https://github.com/yezihaohao/react-admin>             |
+| React+webpack+redux+ant design+axios+less全家桶后台管理框架 | <https://github.com/duxianwei520/react>                 |
+| React-Antd                                                  | <https://github.com/zhangZhiHao1996/react-admin-master> |
+| 实时日志分析系统后台数据管理系统 react mobx  ts             | <https://github.com/tinylog/tinylog-ui>                 |
 

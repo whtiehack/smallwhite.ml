@@ -29,7 +29,7 @@ layout: bookmark
 
 <https://www.v2ex.com/t/563292#reply125>
 
-![img](images/mac.jpg)
+![img](mac.jpg)
 
 <https://github.com/hzlzh/Best-App>
 

@@ -67,6 +67,9 @@ layout: bookmark
 | --------------------------- | -------------------------------------------- |
 | ip  <http://httpbin.org/ip> | {   "origin": "218.2.184.58, 218.2.184.58" } |
 | <https://mzr.me/>           | mzr is me  公共DNS  公共NTP  在线二维码API   |
+| 磁力链接搜索                | <https://sou.becmd.com/>                     |
+| 免费接收短信                | <https://www.becmd.com/>                     |
+| 免费接收短信                | <https://www.cnwml.com/>                     |
 
 
 
@@ -94,4 +97,6 @@ layout: bookmark
 | React+webpack+redux+ant design+axios+less全家桶后台管理框架 | <https://github.com/duxianwei520/react>                 |
 | React-Antd                                                  | <https://github.com/zhangZhiHao1996/react-admin-master> |
 | 实时日志分析系统后台数据管理系统 react mobx  ts             | <https://github.com/tinylog/tinylog-ui>                 |
+
+
 

@@ -29,7 +29,7 @@ layout: bookmark
 
 <https://www.v2ex.com/t/563292#reply125>
 
-<center><img src="mac.jpg"/></center>
+<center><img style="width:50%;height:auto;" src="mac.jpg"/></center>
 
 <https://github.com/hzlzh/Best-App>
 
@@ -99,4 +99,122 @@ layout: bookmark
 | 实时日志分析系统后台数据管理系统 react mobx  ts             | <https://github.com/tinylog/tinylog-ui>                 |
 
 
+
+IOS免越狱模拟定位。
+
+<https://github.com/JonneyDong/JocationRelease>
+
+https://github.com/JonneyDong/
+
+
+
+短网址
+
+| name | addr          |
+| ---- | ------------- |
+| kks  | http://kks.me |
+
+
+图床
+
+速度快免费 直接上传
+https://sm.ms/
+
+在线 photoshop
+https://www.photopea.com/
+
+阿里公共 DNS 223.5.5.5
+电信
+114.114.114.114
+
+cname  a记录查询
+http://dbcha.com/
+
+tools
+http://tool.liumingye.cn/
+
+
+微信域名屏蔽检测
+http://wx.rrbay.com
+http://wx.rrbay.com/pro/wxUrlCheck.ashx?url=http://www.baidu.com
+
+微信小程序开发框架
+https://wepyjs.github.io/wepy-docs/2.x/#/base/instance
+
+在线转换工具（视频，图片)
+https://convertio.co/zh/mp4-mp3/
+
+百度盘搜索工具
+http://yun.java1234.com/
+
+工具站
+https://www.dute.org/
+工具站，有视频聚合
+http://www.ojit.com/
+
+
+
+拖拽方式生成网页：
+https://github.com/givanz/VvvebJs
+
+
+临时主机
+4小时 https://labs.play-with-docker.com
+https://labs.play-with-k8s.com
+2小时 https://dashboard.daocloud.io/
+
+PaaS部分免费使用
+https://leancloud.cn
+https://www.it120.cc/
+
+
+游戏服务端云
+https://www.matchvs.com/
+
+云开发
+https://www.bmob.cn/
+
+腾讯云实验中心。
+https://cloud.tencent.com/developer/labs/gallery?category=experience
+
+下载中转：
+https://kkwen.cn/index.php/archives/3/
+ http://f.kkwen.cn/kwen/download?url=
+
+android 电影视频app
+http://sokuyun.cc/
+
+文件与文件夹对比同步
+https://freefilesync.org/
+
+
+百度盘下载工具
+http://pandownload.com/
+https://github.com/b3log/baidu-netdisk-downloaderx
+
+ssr 订阅
+https://github.com/AmazingDM/sub
+https://m.raws.tk/
+https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+https://www.raws.tk/app/ios/
+https://github.com/eycorsican/rule-sets
+
+
+
+
+
+免费CDN：
+ https://inxy.host/products/cdn/
+
+试用30天 速度很快
+https://www.keycdn.com/
+
+静态文件 cdn
+https://www.staticfile.org/
+
+npm github
+https://www.jsdelivr.com
+
+npm:
+https://unpkg.com/
 

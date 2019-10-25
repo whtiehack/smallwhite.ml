@@ -142,3 +142,16 @@ Go 1.13 及以上
 ```
 $ go env -w GOPROXY=https://yourproxy.com,direct
 ```
+
+
+
+#### 2019-10-25 13:28:30 更新
+
+Go 1.13 及以上  
+
+```
+go env -w GOSUMDB="sum.golang.google.cn"
+```
+
+
+

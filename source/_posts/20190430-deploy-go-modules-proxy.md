@@ -155,3 +155,11 @@ go env -w GOSUMDB="sum.golang.google.cn"
 
 
 
+#### 2019-10-28 16:16:13 更新
+
+阿里出了一个代理   https://mirrors.aliyun.com/goproxy/
+
+```
+export GOPROXY=https://mirrors.aliyun.com/goproxy/
+```
+

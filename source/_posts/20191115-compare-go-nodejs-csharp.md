@@ -58,7 +58,7 @@ v10.14.1
 
 * 测试代码
 
-```
+```javascript
 
 console.log('test begin')
 
@@ -106,7 +106,7 @@ console.log('22', fibonacci2(30))
 
 * nodejs运行结果：
 
-```
+```shell
 test begin
 start 1
 fibo: 57.954ms
@@ -124,7 +124,7 @@ fibo2: 833.642ms
 
 * 版本
 
-```
+```shell
 go version
 go version go1.13.1 windows/amd64
 
@@ -143,7 +143,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 
-```
+```go
 package main
 
 /*
@@ -249,7 +249,7 @@ func fibo2(n int) int {
 
 
 
-```
+```shell
 go build -ldflags="-s -w" testfibo.go
 ```
 
@@ -259,7 +259,7 @@ go build -ldflags="-s -w" testfibo.go
 
 
 
-```
+```shell
 start 1
 fibo: 30.0017ms
 start 2
@@ -287,7 +287,7 @@ cfibo2: 199.0114ms
 
 
 
-```
+```shell
 dotnet --version
 3.0.100
 ```
@@ -296,7 +296,7 @@ dotnet --version
 
 
 
-```
+```c#
 using System;
 
 namespace testdot
@@ -362,7 +362,7 @@ namespace testdot
 
 
 
-```
+```shell
 dotnet publish -c Release
 ```
 
@@ -374,7 +374,7 @@ dotnet publish -c Release
 
 
 
-```
+```shell
 start 1
 fibo 41
 start 2

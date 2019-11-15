@@ -308,7 +308,7 @@ namespace testdot
             var one = 1;
             var two = 1;
             var three = 0;
-            for (var i = 0; i <= n; i++)
+            for (var i = 3; i <= n; i++)
             {
                 three = one + two;
                 one = two;
@@ -376,10 +376,10 @@ dotnet publish -c Release
 
 ```
 start 1
-fibo 44
+fibo 41
 start 2
-fibo2 445
-11 3524578
+fibo2 443
+11 832040
 22 832040
 
 ```

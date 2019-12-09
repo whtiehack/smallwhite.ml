@@ -48,7 +48,7 @@ permalink: compare-go-nodejs-csharp
 - [Nodejs](#nodejs)
 - [go and c](#go-and-c)
 - [csharp](#csharp)
-- [Results](#results)
+- [Results](#Results)
 
 
 

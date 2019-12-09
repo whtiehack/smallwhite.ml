@@ -41,6 +41,15 @@ permalink: compare-go-nodejs-csharp
 
 
 
+## contents
+
+
+
+- [Nodejs](#nodejs)
+- [go and c](#go-and-c)
+- [csharp](#csharp)
+- [Results](#results)
+
 
 
 ----
@@ -392,6 +401,8 @@ fibo2 443
 
 
 
+## Results
+
 测试结果只是做为一个参考。
 
 
@@ -399,3 +410,13 @@ fibo2 443
 测试结果不一定准确，主要注重的是代码执行效率。
 
 尤其是c部分的测试，用的是cgo。
+
+
+
+|       | nodejs    | go         | c          | csharp |
+| ----- | --------- | ---------- | ---------- | ------ |
+| fibo  | 57.954ms  | 30.0017ms  | 0s         | 41ms   |
+| fibo2 | 833.642ms | 422.0242ms | 199.0114ms | 443ms  |
+
+
+

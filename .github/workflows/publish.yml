@@ -10,9 +10,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
-        with:
-            node-version: 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
     - run: npm install
     - run: npm run build
     - name: Build and Deploy
@@ -21,4 +21,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: publish # The folder the action should deploy.
+        FOLDER: public # The folder the action should deploy.

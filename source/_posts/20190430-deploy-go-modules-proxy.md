@@ -163,3 +163,13 @@ go env -w GOSUMDB="sum.golang.google.cn"
 export GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
 
+
+
+#### 2020-03-27 15:43 更新
+
+百度提供的 go 代理  https://goproxy.baidu.com/
+
+```
+export GOPROXY=https://goproxy.baidu.com
+```
+

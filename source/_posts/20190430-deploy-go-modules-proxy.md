@@ -153,8 +153,6 @@ Go 1.13 及以上
 go env -w GOSUMDB="sum.golang.google.cn"
 ```
 
-
-
 #### 2019-10-28 16:16:13 更新
 
 阿里出了一个代理   https://mirrors.aliyun.com/goproxy/
@@ -172,4 +170,20 @@ export GOPROXY=https://mirrors.aliyun.com/goproxy/
 ```
 export GOPROXY=https://goproxy.baidu.com
 ```
+
+
+
+#### 2020-04-02 15:03 更新
+
+sum.golang.google.cn 可能也已经被墙处理了。特别的不稳定
+
+可以关闭 check sum 
+
+` go env -w GOSUMDB=off`
+
+
+
+`-w` 是写入文件
+
+` go env ` 可以查看自己的go变量  包括 `env` 保存的目录
 

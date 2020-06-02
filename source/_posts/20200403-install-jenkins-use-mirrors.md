@@ -149,3 +149,28 @@ location /download/plugins
 
 
 
+### 2020/06/02 更新
+
+
+
+`hudson.model.UpdateCenter.xml`  文件在 mac下的 `/Users/xxx/.jenkins` 目录
+
+
+
+caddy 配置. 可以更新 war版本了.
+
+```
+
+:80 {
+   gzip
+   log stdout
+   rewrite /download {
+	  r (.*)
+      to /jenkins/{1}
+   }
+   proxy / https://mirrors.tuna.tsinghua.edu.cn
+}
+```
+
+
+

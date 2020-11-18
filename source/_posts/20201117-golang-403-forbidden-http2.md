@@ -311,7 +311,7 @@ func (t *Transport) onceSetNextProtoDefaults() {
 
 
 
-* 方法二: 设置 `Transport`的 `TLSNextProto` 为空
+* 方法二: 设置 `Transport`的 `TLSNextProto` 为空map
 
 
 
@@ -319,15 +319,17 @@ func (t *Transport) onceSetNextProtoDefaults() {
 // 使用自定义 client的时候
 client := &http.Client{
 		Transport: &http.Transport{
-			TLSNextProto: nil,
+			TLSNextProto: make(map[string]func(authority string, c *tls.Conn) http.RoundTripper),
 		},
 	}
 
 
 // 如果用的是默认 client
 http.DefaultClient.Transport = &http.Transport{
-    TLSNextProto: nil,
+    TLSNextProto: make(map[string]func(authority string, c *tls.Conn) http.RoundTripper),
 }
 
 ```
+
+
 

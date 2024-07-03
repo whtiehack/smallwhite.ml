@@ -29,8 +29,8 @@ error_page_bg: /dogs.jpg
 # 页面加载loading图标
 loader_img: /loader.gif
 
-# Baidu statistic
-baidu_statistic: ffbfeacabe5e673d7a972c8b3977806f
+# Baidu statistic  ffbfeacabe5e673d7a972c8b3977806f
+baidu_statistic: d36d3fe91a80f7e10b5757b91896bc98
 
 # Busuanzi
 busuanzi: true
